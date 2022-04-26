@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: aliceblue;
+}
+.container{
+    width: 100%;
+    padding: 100px 80px;
+    position: relative;
+    height: 98vh;
+    
+}
+.btn-content{
+    background-color: white;
+    /* width: auto; */
+    padding: 40px 60px;
+    position: fixed;
+}
+.btn-content button{
+    border-radius: 20px;
+    color: white;
+    padding: 15px 13px;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+}
+.btn-content #success{
+    background-color: green;
+}
+.btn-content #danger{
+    background-color: red;
+}
+.btn-content #warning{
+    background-color: rgb(204, 204, 6);
+}
+.btn-content #info{
+    background-color: rgb(31, 96, 134);
+}
+.notificationSuccess{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color:  green;
+    padding: 30px 30px 0;
+    border-radius: 20px;
+    margin-right: 80px;
+    animation-name: colornotifation;
+    animation-duration: 1s;
+}
+.notificationDanger{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color:  red;
+    padding: 30px 30px 0;
+    border-radius: 20px;
+    margin-right: 80px;
+    animation-name: colornotifation;
+    animation-duration: 1s;
+
+
+}
+.notificationWarning{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color:  rgb(204, 204, 6);
+    padding: 30px 30px 0;
+    border-radius: 20px;
+    margin-right: 80px;
+    animation-name: colornotifation;
+    animation-duration: 1s;
+
+}
+.notificationInfo{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color:  rgb(31, 96, 134);
+    padding: 30px 30px 0;
+    border-radius: 20px;
+    margin-right: 80px;
+    animation-name: colornotifation;
+    animation-duration: 1s;
+}
+@keyframes colornotifation {
+    from{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        /* background-color:  green; */
+        padding: 30px 30px 0;
+        border-radius: 20px;
+        margin-right: 80px;
+    }
+    to{
+        position: absolute;
+        bottom: 200px;
+        right: 0;
+        /* background-color:  green; */
+        padding: 30px 30px 0;
+        border-radius: 20px;
+        margin-right: 80px;
+    }
+}

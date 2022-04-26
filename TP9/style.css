@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+:root{
+    --primary-color:#22254a;
+    --secondary-color:#373b69;
+} 
+body{
+    background-color:var(--primary-color);
+    overflow-x: hidden;
+}
+header{
+    background-color:var(--secondary-color);
+    padding: 50px;
+    position: relative;
+    /* position: fixed; */
+}
+.conetnt-search{
+    border: solid 2px var(--primary-color);
+    border-radius: 10px;
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    padding: 10px;
+}
+.conetnt-search input{
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    font-size: 1rem;
+}
+.content-search input:focus{
+    outline: 0;
+    background-color:transparent ;
+    border: none;
+    height: 100%;
+    color: aliceblue;
+
+}
+.modal{
+    /* border: solid rgb(0, 255, 85); */
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+}
+.content{
+    border: solid rgb(255, 0, 140);
+    display: flex;
+    flex-direction: column;
+    width: 18%;
+    margin: 1em;
+    border-radius: 3px;
+    background-color: var(--secondary-color);
+    position: relative;
+    overflow: hidden;
+}
+.content:hover{
+    transform: scale(1);
+    transition:all rotate(360deg) 2s;
+}
+.content img{
+    width: 100%;
+}
+
+.modal-info{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 15px;
+}
+.modal-info span{
+    background-color: var(--primary-color);
+    padding: 5px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+.modal-info span.green{
+    color: #27af2b;
+}
+.modal-info span.orange{
+    color: orange;
+}
+.modal-info span.red{
+    color: red;
+}
+.describe{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    padding: 1.5rem;
+    max-height: 100%;
+    transform: translateY(113%);
+    font-size: 1.4rem;
+    
+}
+.content:hover .describe{
+    transform: translateY(0%);
+    transition: all 2s;
+}
+
+
+
+
+
